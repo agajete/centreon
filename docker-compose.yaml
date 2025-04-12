@@ -50,6 +50,8 @@ services:
     build:
       context: http
     image: tpo76/apache:24.04.0
+    env_file:
+      - .env
     container_name: apache
     hostname: apache
     restart: always

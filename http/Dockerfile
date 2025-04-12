@@ -4,7 +4,8 @@ FROM docker.io/library/almalinux:9.5
 #ARG TZ
 
 ENV TZ=${TZ}
-CMD echo ${TZ}
+
+CMD ["/bin/bash", "-c", "echo ${TZ}"]
 
 RUN dnf update -y && \
     dnf install -y httpd
