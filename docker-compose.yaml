@@ -60,4 +60,3 @@ services:
     volumes:
       - centreon-share:/usr/share/centreon:ro
       - centreon-img:/usr/share/centreon/www/img/media:rw
-
