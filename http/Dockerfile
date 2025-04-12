@@ -1,7 +1,7 @@
 FROM docker.io/library/almalinux:9.5
 
 
-#ARG TZ
+ARG TZ
 
 ENV TZ=${TZ}
 
