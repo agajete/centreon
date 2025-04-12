@@ -1,9 +1,10 @@
-FROM docker.io/library/almalinux:9.5-minimal
+FROM docker.io/library/almalinux:9.5
 
 
 #ARG TZ
 
 ENV TZ=${TZ}
+CMD echo ${TZ}
 
 RUN dnf update -y && \
     dnf install -y httpd
