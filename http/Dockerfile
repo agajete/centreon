@@ -5,8 +5,6 @@ ARG TZ
 
 ENV TZ=${TZ}
 
-CMD ["/bin/bash", "-c", "echo ${TZ}"]
-
 RUN dnf update -y && \
     dnf install -y httpd
 

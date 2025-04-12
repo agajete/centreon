@@ -3,38 +3,7 @@ volumes:
     name: centreon-share
   centreon-img:
     name: centreon-img
-  centreon-etc:
-    name: centreon-etc
-  centreon-var:
-    name: centreon-var
-  centreon-cache:
-    name: centreon-cache
-  broker-etc:
-    name: broker-etc
-  broker-log:
-    name: broker-log
-  broker-module:
-    name: broker-module
-  centengine-etc:
-    name: centengine-etc
-  gorgone-etc:
-    name: gorgone-etc
-  gorgone-cache:
-    name: gorgone-cache
-  gorgone-var:
-    name: gorgone-var
-  centengine-log:
-    name: centengine-log
-  centengine-var:
-    name: centengine-var
-  centreon-bin:
-    name: centreon-bin
-  centplugin:
-    name: centplugin
-  centreon-pack:
-    name: centreon-pack
-  database:
-    name: database
+
 
 networks:
   centreon_net:
@@ -62,5 +31,5 @@ services:
     ports:
       - 80:80
     volumes:
-      - centreon-share:/usr/share/centreon:ro
+      - centreon-share:/usr/share/centreon:rw
       - centreon-img:/usr/share/centreon/www/img/media:rw
